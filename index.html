@@ -12,12 +12,55 @@
         th { background-color: #007bff; color: white; padding: 12px; text-align: left; position: sticky; top: 0; }
         td { padding: 10px; border-bottom: 1px solid #ddd; }
         tr:hover { background-color: #f1f1f1; }
+        .price-note {
+            text-align: center;
+            background-color: #fff3cd;
+            padding: 10px;
+            border: 1px solid #ffeeba;
+            border-radius: 5px;
+            color: #856404;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+    
+        .contact-box {
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #e9ecef;
+            border-radius: 8px;
+        }
+    
+        .contact-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+    
+        .contact-btn:hover {
+            background-color: #218838;
+        }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h2>醫療器材產品搜尋系統</h2>
+    <h2>嘉村醫材</h2>
+
+    <p class="price-note">
+        ⚠️ 備註：以上產品價格均為<strong>未稅價</strong>。
+    </p>
+
+    <div class="contact-box">
+        <p>如需議價或詢問詳細規格：</p>
+        <a href="tel:0923709898" class="contact-btn">📞 立即致電：0923-709-898或官方Line詢問</a>
+    </div>
+    
     <input type="text" id="searchInput" onkeyup="searchTable()" placeholder="🔍 請輸入產品名稱、規格或關鍵字...">
     <table id="priceTable">
         <thead>
